@@ -29,6 +29,7 @@
  * belongs_to photoshoot
 
 #### photoshoot
+ * user_id
  * location
  * has_many photos
  * belongs_to user
