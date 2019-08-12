@@ -1,37 +1,34 @@
 # Notes
+[Table diagram](https://www.draw.io/#G1z7Py_wqI9uqa4DVURdoF_bSqQMLozLkD)
+
 
 ### Models
  * User (photographer)
+ * favorites
  * photo
  * photoshoot
- * favorites
 
 ---
-### Relationships
- * User has_many photos
- * photos belong to users
- * user has_many photos through: photoshoot
-
-
-
-
 
 #### User
- * has_many: photos
- * has favorites
- * user has favorites through photoshoots
+ * username
+ * password
+ * has_many :favorites
+ * has_many photos through favorites
 
 
 #### Favorites
- * notes:string
- * belongs_to user
- * belongs_to photoshoot
+ * user_id
+ * photo_id
+ * comments: text_field
 
 
 #### photos
- * belongs_to user
  * title
+ * comments
+ * belongs_to photoshoot
 
 #### photoshoot
+ * location
  * has_many photos
- * has_many favorites
+ * belongs_to user
