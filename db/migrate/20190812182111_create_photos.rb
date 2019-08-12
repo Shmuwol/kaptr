@@ -2,8 +2,8 @@ class CreatePhotos < ActiveRecord::Migration[5.2]
   def change
     create_table :photos do |t|
       t.string :title
-      t.texts_field :comment
-      t.belongs_to :user, foreign_key: true
+      t.string :comment
+      t.belongs_to :photoshoot, foreign_key: true
 
       t.timestamps
     end

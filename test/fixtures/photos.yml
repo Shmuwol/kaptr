@@ -2,10 +2,10 @@
 
 one:
   title: MyString
-  comment: 
-  user: one
+  comment: MyString
+  photoshoot: one
 
 two:
   title: MyString
-  comment: 
-  user: two
+  comment: MyString
+  photoshoot: two
