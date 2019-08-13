@@ -20,8 +20,7 @@
 #### Favorites
  * user_id
  * photo_id
- * comments: text_field
-
+ * comments:text
 
 #### photos
  * title
